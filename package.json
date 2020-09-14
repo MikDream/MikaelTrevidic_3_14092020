@@ -1,0 +1,21 @@
+{
+  "name": "mikaeltrevidic_3_14092020",
+  "version": "0.0.1",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "compil": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikDream/MikaelTrevidic_3_14092020.git"
+  },
+  "author": "Mikdream",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/MikDream/MikaelTrevidic_3_14092020/issues"
+  },
+  "homepage": "https://github.com/MikDream/MikaelTrevidic_3_14092020#readme"
+}
