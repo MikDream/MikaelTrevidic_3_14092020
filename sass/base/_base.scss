@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-block{
+    @include small-size{
+        width: 100%;
+    }
+    @include medium-size{
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include large-size{
+        width: 80%;
+        margin: 0 auto;
+    }
+}

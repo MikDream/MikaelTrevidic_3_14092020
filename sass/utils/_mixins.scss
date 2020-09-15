@@ -1,0 +1,21 @@
+/*MEDIA QUERIES*/
+@mixin small-size{
+    @media screen and (min-width: map-get($breakpoints, small)) {
+        @content;
+    }
+}
+@mixin medium-size{
+    @media screen and (min-width: map-get($breakpoints, medium)) {
+        @content;
+    }
+}
+@mixin large-size{
+    @media screen and (min-width: map-get($breakpoints, large)) {
+        @content;
+    }
+}
+/*END MEDIA QUERIES*/
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}
