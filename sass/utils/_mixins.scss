@@ -15,7 +15,14 @@
     }
 }
 /*END MEDIA QUERIES*/
-@mixin flex-center{
+/*GENERAL MIXIN*/
+@mixin general-flex($direction: row, $justify: flex-start, $align: stretch){
     display: flex;
-    justify-content: center;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 }
+@mixin general-padding($top: 20px, $bottom: 20px){
+    padding: $top 20px $bottom 20px;
+}
+/*END GENERAL MIXIN*/
