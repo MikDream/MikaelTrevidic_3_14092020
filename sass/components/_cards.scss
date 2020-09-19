@@ -1,17 +1,24 @@
-@mixin card($images){
-    width: 100%;
-    height: 174px;
-    border-radius: 10px;
-    background-image: $images;
-    background-size: cover;
-    background-position: center;
-}
-
 .card{
     background-color: white;
     border-radius: 10px;
+    margin-bottom: 18px;
+    & h4{
+        margin: 18px 0 18px 12px;
+    } 
+    & p{
+        margin-left: 12px;
+        padding-bottom: 18px;
+    }
+    &--theFullPalette{
+        @include card(url('../images/restaurants/the_full_palette.jpg'));
+    }
     &--theEnchantedPlate{
         @include card(url('../images/restaurants/the_enchanted_plate.jpg'));
-        
+    }
+    &--bastille{
+        @include card(url('../images/restaurants/bastille.jpg'));
+    }
+    &--leGourmand{
+        @include card(url('../images/restaurants/le_gourmand.jpg'));
     }
 }

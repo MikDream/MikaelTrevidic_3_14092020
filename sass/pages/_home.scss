@@ -61,6 +61,9 @@
     @include general-flex(column);
     @include general-padding(50px, 50px);
     background-color: $grey-background;
+    &__title{
+        margin-bottom: 24px;
+    }
     & img{
         display: none;
     }
