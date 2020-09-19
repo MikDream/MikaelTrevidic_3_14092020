@@ -4,5 +4,7 @@
     border: none;
     color: white;
     border-radius: 50px;
-    background-color: $color-secondary;
+    background: linear-gradient(0deg, $color-primary 0%, $color-secondary 80%);
+    box-shadow: $block-shadow;
+    font-size: 1rem;
 }

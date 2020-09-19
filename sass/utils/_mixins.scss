@@ -25,4 +25,7 @@
 @mixin general-padding($top: 20px, $bottom: 20px){
     padding: $top 20px $bottom 20px;
 }
+@mixin general-link{
+    text-decoration: none;
+}
 /*END GENERAL MIXIN*/
