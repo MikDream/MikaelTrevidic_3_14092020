@@ -1,0 +1,39 @@
+.header--menu{
+    box-shadow: none;
+}
+.menu{
+    width: 100%;
+    & img{
+        display: none;
+    }
+    & .bastille{
+        @include menus-image(url('../images/restaurants/bastille.jpg'));
+        
+    }
+    & .gourmand{
+        @include menus-image(url('../images/restaurants/le_gourmand.jpg'));
+    }
+    & .full-palette{
+        @include menus-image(url('../images/restaurants/the_full_palette.jpg'));
+    }
+    & .enchanted-plate{
+        @include menus-image(url('../images/restaurants/the_enchanted_plate.jpg'));
+    }
+    &__carte{
+        @include general-flex(column);
+        padding: 0 14px 80px 14px;
+        background-color: $grey-background;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        & .btn--main{
+            margin-top: 50px;
+            align-self: center;
+        }
+        & h1{
+            padding-top: 36px;
+        }
+        & h4{
+            margin-top: 45px;
+        }
+    }
+}
