@@ -9,6 +9,9 @@
 h1,h2,h3,h4,h5,h6{
     font-family: $title-font-family;
 }
+h1{
+    font-size: 1.72rem;
+}
 h2{
     font-size: 1.3rem;
 }
@@ -20,4 +23,8 @@ h4{
 }
 h5{
     font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
