@@ -3,12 +3,48 @@
     border-radius: 10px;
     margin-bottom: 18px;
     box-shadow: $block-shadow;
-    & h4{
-        margin: 18px 0 18px 12px;
-    } 
-    & p{
-        margin-left: 12px;
-        padding-bottom: 18px;
+    & .new{
+        position: relative;
+        padding: 10px 26px;
+        background-color: $color-tertiary;
+        top: 26px;
+        left: 240px;
+        z-index: 1;
+    }
+    &--text{
+        @include general-flex(row, space-between);
+        & h4{
+            margin: 18px 0 18px 12px;
+        }
+        & p{
+            margin-left: 12px;
+            padding-bottom: 18px;
+        }
+        & i{
+            font-size: 1.3rem;
+        }
+        & .fa-stack{
+            vertical-align: top;
+            padding: 40px 12px 0 0;
+        }
+        & .state2{
+            color: rgba(0, 0, 0, 0);
+        }
+        & .fa-stack:hover{
+            cursor: pointer;
+            .state1{
+                display: none;
+            }
+            .state2{
+                animation-name: heart;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+        }
+          
+            
+            
+        
     }
     &--theFullPalette{
         @include card(url('../images/restaurants/the_full_palette.jpg'));

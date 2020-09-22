@@ -42,6 +42,10 @@
         padding: 20px 0;
         border-radius: 20px;
         box-shadow: $block-shadow;
+        background-color: lighten($color-primary, 30%);
+        & .fas{
+            color: $color-primary;
+        }
     }
     & .fas{
         margin: 0 20px 0 0;
