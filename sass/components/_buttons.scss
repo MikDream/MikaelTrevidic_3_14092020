@@ -18,20 +18,32 @@
     margin-top: 14px;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
+    max-height: 58px;
+    .price--plat{
+        margin-left: auto;
+        margin-right: 0;
+    }
     & div{
         padding: 10px;
+        max-height: 58px;
+        white-space: nowrap;
+        overflow: hidden;  
+    }
+    & small{
+        text-overflow: ellipsis;
     }
     .check--plat{
         position: absolute;
         z-index: -1;
+        flex-shrink: 0;
         text-align: center;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         background-color: $color-tertiary;
         padding: 0;
-        width: 0;
+        width: 68px;
         height: 58px;
         & i{
             color: white;
