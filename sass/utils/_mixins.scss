@@ -73,13 +73,13 @@
     .state1{
         // display: none;
         animation-name: heart2;
-        animation-duration: 0.5s;
-        animation-delay: 0.5s;
+        animation-duration: 0.3s;
+        animation-delay: 0.2s;
         animation-fill-mode: forwards;
     }
     .state2{
         animation-name: heart;
-        animation-duration: 0.5s;
+        animation-duration: 0.3s;
         animation-fill-mode: forwards;
     }
 }
