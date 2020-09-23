@@ -71,15 +71,14 @@
 @mixin heart-hover{
     cursor: pointer;
     .state1{
-        // display: none;
         animation-name: heart2;
-        animation-duration: 0.3s;
-        animation-delay: 0.2s;
+        animation-duration: 0.2s;
+        animation-delay: 0.1s;
         animation-fill-mode: forwards;
     }
     .state2{
         animation-name: heart;
-        animation-duration: 0.3s;
+        animation-duration: 0.2s;
         animation-fill-mode: forwards;
     }
 }
