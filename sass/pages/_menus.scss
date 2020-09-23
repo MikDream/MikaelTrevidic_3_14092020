@@ -1,6 +1,5 @@
 .header--menu{
     box-shadow: none;
-    
 }
 .menu{
     width: 100%;
@@ -9,7 +8,6 @@
     }
     & .bastille{
         @include menus-image(url('../images/restaurants/bastille.jpg'));
-        
     }
     & .gourmand{
         @include menus-image(url('../images/restaurants/le_gourmand.jpg'));
@@ -27,6 +25,25 @@
         background-color: $grey-background;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
+        & .fa-stack{
+            vertical-align: top;
+            padding: 0;
+        }
+        & .state2{
+            color: rgba(0, 0, 0, 0);
+        }
+        & .fa-stack:hover{
+            @include heart-hover;
+        }  
+        &__entrees{
+            @include btn-plats-anim(0.5s);
+        }
+        &__plats{
+            @include btn-plats-anim(1.5s);
+        }
+        &__dessert{
+            @include btn-plats-anim(2.5s);
+        }
         & .btn--main{
             margin-top: 50px;
             align-self: center;

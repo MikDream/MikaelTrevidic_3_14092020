@@ -3,33 +3,90 @@
         width: 0%;
     }
     to{
+        opacity: 1;
         width: 17.3%;
     }
 }
 @keyframes check2{
     from{
         opacity: 0;
-        transform: rotate(0);
+        transform: rotateY(0);
     }
     to{
         opacity: 1;
-        transform: rotate(1turn);
+        transform: rotateY(360deg);
     }
 }
 @keyframes heart{
     0%{
         color: rgba(0, 0, 0, 0);
+        transform: scaleY(0);
+    }
+    15%{
+        color: #ff79d910;
+        transform: scaleY(0.15);
     }
     25%{
-        color: #ff79d92f;;
+        color: #ff79d91f;
+        transform: scaleY(0.25);
     }
-    50%{
-        color: #ff79d967;;
+    35%{
+        color: #ff79d93b;
+        transform: scaleY(0.35);
+    }
+    45%{
+        color: #ff79d957;
+        transform: scaleY(0.45);
+    }
+    55%{
+        color: #ff79d973;
+        transform: scaleY(0.55);
+    }
+    65%{
+        color: #ff79d991;
+        transform: scaleY(0.65);
     }
     75%{
-        color: #ff79d9a8;;
+        color: #ff79d9a9;
+        transform: scaleY(0.75);
+    }
+    85%{
+        color: #ff79d9c2;
+        transform: scaleY(0.85);
+    }
+    95%{
+        color: #ff79d9dc;
+        transform: scaleY(0.95);
     }
     100%{
         color: $color-secondary;
+        transform: scaleY(1);
+    }
+}
+@keyframes heart2{
+    0%{
+        color: rgb(0, 0, 0);
+    }
+    25%{
+        color: #9256dc2d;
+    }
+    50%{
+        color: #9256dc56;
+    }
+    75%{
+        color: #9256dc96;
+    }
+    100%{
+        color: $color-primary;
+    }
+}
+@keyframes open-menu{
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
     }
 }

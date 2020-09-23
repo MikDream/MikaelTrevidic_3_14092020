@@ -32,15 +32,7 @@
             color: rgba(0, 0, 0, 0);
         }
         & .fa-stack:hover{
-            cursor: pointer;
-            .state1{
-                display: none;
-            }
-            .state2{
-                animation-name: heart;
-                animation-duration: 1s;
-                animation-fill-mode: forwards;
-            }
+            @include heart-hover;
         }  
     }
     &--theFullPalette{
