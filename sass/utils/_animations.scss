@@ -21,51 +21,63 @@
     0%{
         color: rgba(0, 0, 0, 0);
         transform: scaleY(0);
+        transform: scaleX(0);
     }
     15%{
         color: #ff79d910;
         transform: scaleY(0.15);
+        transform: scaleX(0.15);
     }
     25%{
         color: #ff79d91f;
         transform: scaleY(0.25);
+        transform: scaleX(0.25);
     }
     35%{
         color: #ff79d93b;
         transform: scaleY(0.35);
+        transform: scaleX(0.35);
     }
     45%{
         color: #ff79d957;
         transform: scaleY(0.45);
+        transform: scaleX(0.45);
     }
     55%{
         color: #ff79d973;
         transform: scaleY(0.55);
+        transform: scaleX(0.55);
     }
     65%{
         color: #ff79d991;
         transform: scaleY(0.65);
+        transform: scaleX(0.65);
     }
     75%{
         color: #ff79d9a9;
         transform: scaleY(0.75);
+        transform: scaleX(0.75);
     }
     85%{
         color: #ff79d9c2;
         transform: scaleY(0.85);
+        transform: scaleX(0.85);
     }
     95%{
         color: #ff79d9dc;
         transform: scaleY(0.95);
+        transform: scaleX(0.95);
     }
     100%{
         color: $color-secondary;
         transform: scaleY(1);
+        transform: scaleX(1);
     }
 }
 @keyframes heart2{
     0%{
         color: rgb(0, 0, 0);
+        transform: scale(1.5, 1.5);
     }
     25%{
         color: #9256dc2d;
