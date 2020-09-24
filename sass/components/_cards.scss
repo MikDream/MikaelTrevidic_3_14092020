@@ -4,6 +4,17 @@
     border-radius: 10px;
     margin-bottom: 18px;
     box-shadow: $block-shadow;
+    @include medium-size{
+        width: 48%;
+    }
+    @include xlarge-size{
+        width: 35%;
+        margin: 0 25px 50px 25px;
+    }
+    @include xxlarge-size{
+        width: 20%;
+        margin: 0 25px 50px 25px;
+    }
     & .new{
         position: absolute;
         padding: 10px 26px;
@@ -23,6 +34,12 @@
         }
         & i{
             font-size: 1.3rem;
+            @include xlarge-size{
+                font-size: 1.5rem;
+            }
+            @include xxlarge-size{
+                font-size: 1.7rem;
+            }
         }
         & .fa-stack{
             vertical-align: top;

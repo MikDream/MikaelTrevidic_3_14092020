@@ -3,6 +3,9 @@
         @include general-flex(row, center, center);
         padding: 16px 0;
         background-color: darken($grey-background, 4.7%);
+        @include xxlarge-size{
+            padding: 25px;
+        }
         & p{
             margin-left: 18px;
         }
@@ -20,6 +23,19 @@
 .how-it-works{
     @include general-flex(column);
     @include general-padding(50px, 50px);
+    @include medium-size{
+        padding: 50px 25%;
+        text-align: center;
+    }
+    @include large-size{
+        padding: 50px 30%;
+    }
+    @include xlarge-size{
+        padding: 50px 35%;
+    }
+    @include xxlarge-size{
+        padding: 50px 40%;
+    }
     &__step1{
         @include general-flex(row, flex-start, center);
         @include steps;
@@ -36,16 +52,20 @@
     }
     & .fas{
         margin: 0 20px 0 0;
-        padding-left: 33px;
+        padding-left: 12px;
     }
     & p{
         padding: 5.5px 9.2px;
         background-color: $color-primary;
-        position: absolute;
-        left: 10px;
+        position: relative;
+        left: -10px;
         border-radius: 100%;
         color: white;
         font-size: 10px;
+        @include xxlarge-size{
+            font-size: 1rem;
+            padding: 5.5px 12px;
+        }
     }
 }
 .restaurants-list{
@@ -54,8 +74,27 @@
     background-color: $grey-background;
     &__title{
         margin-bottom: 24px;
+        @include xlarge-size{
+            margin-bottom: 50px;
+            align-self: center;
+        }
     }
     & img{
         display: none;
+    }
+    &__cards{
+        @include medium-size{
+            @include general-flex(row, space-between);
+            flex-wrap: wrap;
+        }
+        @include xlarge-size{
+            @include general-flex(row, center);
+            flex-wrap: wrap;
+        }
+        @include xxlarge-size{
+            @include general-flex(row, center);
+            flex-wrap: wrap;
+        }
+        
     }
 }

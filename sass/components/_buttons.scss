@@ -7,6 +7,16 @@
     background: linear-gradient(0deg, $color-primary 0%, $color-secondary 80%);
     box-shadow: $block-shadow;
     font-size: 1rem;
+    @include xlarge-size{
+        font-size: 1.05rem;
+        width: 240px;
+        height: 55px;
+    }
+    @include xxlarge-size{
+        font-size: 1.2rem;
+        width: 280px;
+        height: 75px;
+    }
     &:hover{
         cursor: pointer;
         background: linear-gradient(0deg, lighten($color-primary, 5%) 0%, lighten($color-secondary, 5%) 80%);
@@ -22,6 +32,9 @@
     justify-content: flex-start;
     align-items: flex-end;
     max-height: 58px;
+    @include xxlarge-size{
+        max-height: 78px;
+    }
     .price--plat{
         margin-left: auto;
         margin-right: 0;
@@ -33,6 +46,9 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; 
+        @include xxlarge-size{
+            max-height: 78px;
+        }
     }
     .check--plat{
         position: absolute;
@@ -45,6 +61,9 @@
         padding: 0;
         width: 0%;
         height: 58px;
+        @include xxlarge-size{
+            height: 78px;
+        }
         & i{
             color: white;
             padding-top: 20px;

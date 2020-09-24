@@ -11,6 +11,12 @@
 </head>
 <body>
     <main class="main-block">
+        <div class="loader">
+            <span class="fa-stack">
+                <i class="fas fa-cookie fa-stack-2x loader--full"></i>
+                <i class="fas fa-cookie-bite fa-stack-2x loader--bite"></i>
+            </span>
+        </div>
         <header class="header">
             <img class="header__logo" src="./public/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         </header>
@@ -26,16 +32,16 @@
         </section>
         <section class="how-it-works">
             <h2 class="how-it-works__title">How it works</h2>
-            <a href="#"><span class="how-it-works__step1"><p>1</p><i class="fas fa-mobile-alt"></i>Chose a restaurant</span></a>
-            <a href="#"><span class="how-it-works__step2"><p>2</p><i class="fas fa-list"></i>Create your menu</span></a>
-            <a href="#"><span class="how-it-works__step3"><p>3</p><i class="fas fa-store"></i>Go enjoy it at the restaurants</span></a>
+            <a href="#"><div class="how-it-works__step1"><p>1</p><i class="fas fa-mobile-alt fa-fw"></i>Choose a restaurant</div></a>
+            <a href="#"><div class="how-it-works__step2"><p>2</p><i class="fas fa-list fa-fw"></i>Create your menu</div></a>
+            <a href="#"><div class="how-it-works__step3"><p>3</p><i class="fas fa-store fa-fw"></i>Go enjoy it at the restaurants</div></a>
         </section>
         <section class="restaurants-list">
             <h3 class="restaurants-list__title">Restaurants</h3>
             <div class="restaurants-list__cards">
                 <div class="card">
                     <span class="new"><small>New</small></span>
-                    <div class="card--theFullPalette"><img src='https://placehold.it/335x174' alt=''/></div>
+                    <div class="card--theFullPalette"><img src='public/images/restaurants/the_full_palette.jpg' alt='Image The Full Palette'/></div>
                     <div class="card--text">
                         <a href="palette.html">
                             <div>
@@ -50,7 +56,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card--theEnchantedPlate"><img src='https://placehold.it/335x174' alt=''/><span class="new"><small>New</small></span></div>
+                    <div class="card--theEnchantedPlate"><img src='public/images/restaurants/the_enchanted_plate.jpg' alt='Image The Enchanted Plate'/><span class="new"><small>New</small></span></div>
                     <div class="card--text">
                         <a href="plate.html">
                             <div>
@@ -65,7 +71,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card--bastille"><img src='https://placehold.it/335x174' alt=''/></div>
+                    <div class="card--bastille"><img src='public/images/restaurants/bastille.jpg' alt='Image Bastille'/></div>
                     <div class="card--text">
                         <a href="bastille.html">
                             <div>
@@ -80,7 +86,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card--leGourmand"><img src='https://placehold.it/335x174' alt=''/></div>
+                    <div class="card--leGourmand"><img src='public/images/restaurants/le_gourmand.jpg' alt='Image Le Gourmand'/></div>
                     <div class="card--text">
                         <a href="le_gourmand.html">
                             <div>

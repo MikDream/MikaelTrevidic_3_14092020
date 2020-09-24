@@ -14,6 +14,16 @@
         @content;
     }
 }
+@mixin xlarge-size{
+    @media screen and (min-width: map-get($breakpoints, x-large)) {
+        @content;
+    }
+}
+@mixin xxlarge-size{
+    @media screen and (min-width: map-get($breakpoints, xx-large)) {
+        @content;
+    }
+}
 /*END MEDIA QUERIES*/
 /*GENERAL MIXIN*/
 @mixin general-flex($direction: row, $justify: flex-start, $align: stretch){
@@ -78,7 +88,7 @@
     }
     .state2{
         animation-name: heart;
-        animation-duration: 0.2s;
+        animation-duration: 0.3s;
         animation-fill-mode: forwards;
     }
 }
