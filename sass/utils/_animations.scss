@@ -69,8 +69,9 @@
         transform: scaleX(0.95);
     }
     100%{
-        background: -webkit-linear-gradient(90deg, $color-secondary 30%, $color-primary 90%);
-        -webkit-background-clip: text;
+        // background: -webkit-linear-gradient(90deg, $color-secondary 30%, $color-primary 90%);
+        // -webkit-background-clip: text;
+        color: $color-secondary;
         transform: scaleY(1);
         transform: scaleX(1);
     }
